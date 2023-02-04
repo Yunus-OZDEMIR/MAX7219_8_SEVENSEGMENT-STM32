@@ -85,7 +85,7 @@ void Max7219_Send_Data(uint8_t Address, uint8_t Data);
 void CleanDigits(uint8_t DigitDecode);
 void Max7219_Init(uint8_t Decode_Num,uint8_t Scan_Limit,uint8_t Intens);
 void PrintDigit(uint8_t Digit, uint8_t Print, uint8_t Dot);
-
+void PrintNumber(int Number);
 
 
 

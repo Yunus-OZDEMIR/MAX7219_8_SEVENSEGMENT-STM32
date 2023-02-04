@@ -62,6 +62,24 @@ void PrintDigit(uint8_t Digit, uint8_t Print, uint8_t Dot){
 
 }
 
+void PrintNumber(int Number){
+	int temp;
+
+	temp = Number % 10;
+	PrintDigit(1, temp,DotEn);
+	temp = Number / 10;
+	temp = temp % 10;
+	PrintDigit(2, temp,DotEn);
+	temp = Number / 100;
+	temp = temp % 10;
+	PrintDigit(3, temp,DotEn);
+	/*
+	temp = Number % 1000;
+	temp = temp % 10;
+	PrintDigit(4, temp,DotEn);
+	*/
+}
+
 
 
 

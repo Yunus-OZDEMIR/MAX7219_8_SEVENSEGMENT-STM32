@@ -125,6 +125,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  /*
 	  	  PrintDigit(8, H_letter,DotEn);
 	 	  PrintDigit(7, E_letter,DotEn);
 	 	  PrintDigit(6, L_letter,DotEn);
@@ -138,8 +139,13 @@ int main(void)
 	 	  PrintDigit(2, L_letter,DotDis);
 	 	  PrintDigit(1, P_letter,DotDis);
 	 	  HAL_Delay(500);
-
-	 	  CleanDigits(DecodeRange);
+	   */
+	  for (int i = 0; i<256 ; i++){
+		  PrintNumber(i);
+		  HAL_Delay(50);
+	  }
+	  PrintNumber(1);
+	 	  //CleanDigits(DecodeRange);
 
   }
   /* USER CODE END 3 */
