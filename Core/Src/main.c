@@ -75,7 +75,7 @@ from 1 to 8.
  */
 uint8_t DecodeRange = Decode_7;
 uint8_t ScanMode = ScanEight;
-uint8_t IntensityValue = Intensity_15;
+uint8_t IntensityValue = Intensity_1;
 
 void Delay(uint16_t Delay){
 	__HAL_TIM_SET_COUNTER(&htim10,0);
@@ -140,11 +140,10 @@ int main(void)
 	 	  PrintDigit(1, P_letter,DotDis);
 	 	  HAL_Delay(500);
 	   */
-	  for (int i = 0; i<256 ; i++){
-		  PrintNumber(i);
-		  HAL_Delay(50);
-	  }
-	  PrintNumber(1);
+
+		  PrintNumber(12345678,DotDis);
+		  HAL_Delay(1000);
+
 	 	  //CleanDigits(DecodeRange);
 
   }
