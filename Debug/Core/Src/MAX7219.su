@@ -1,0 +1,4 @@
+../Core/Src/MAX7219.c:16:6:Max7219_Send_Data	16	static
+../Core/Src/MAX7219.c:23:6:CleanDigits	32	static
+../Core/Src/MAX7219.c:41:6:Max7219_Init	16	static
+../Core/Src/MAX7219.c:53:6:PrintDigit	16	static
